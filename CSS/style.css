@@ -1,0 +1,115 @@
+*{
+   margin: 0%; padding: 0;
+   box-sizing: border-box;
+   font-family: 'Josefin Slab', serif;
+}
+header{
+   width: 100%; height: 100vh;
+   background-image: url(image/ok.jpg);
+   background-size: 100% 100%;
+   
+}
+nav{
+   width: 100%;
+   height: 15vh;
+   background-color: rgb(81, 0, 128);
+   color: honeydew;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-transform: uppercase;
+}
+.logo{
+   width: 25%;text-align: center;
+ /*  background: red;*/
+}
+.menu{
+   width: 40%;
+  /* background: yellow;*/
+   display: flex;
+   justify-content: space-around;
+}
+.menu a{
+color: white; text-decoration: none;
+font-weight: bold; width: 25%;
+}
+.menu a:first-child{
+   color:white;
+}
+main{
+   width: 100%; height: 85vh;
+   display: flex;
+   justify-content: center; align-items: center;
+   color: white;
+   text-align: center;
+}
+section{
+  padding-top: 35px;
+
+}
+section h3{
+   font-size: 45px;
+   font-weight: 300;
+   letter-spacing: 3px;
+   color: white;
+
+}
+section h1{
+   margin: 30px 0 20px 0;
+   font-size: 55px;
+   font-weight: 700;
+   text-shadow: 2px 1px 5px black;
+   color: white;
+}
+section p{
+   font-size: 35px;
+   margin-bottom: 25px;
+   text-shadow:  1px 1px 1px black;
+}
+section a{
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 33px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 1px;
+  transition: all .5s ease;
+
+}
+.btnone{
+   background:rgb(51, 48, 48);
+       font-size: medium;
+       color:white;
+}
+.btnone:hover{
+   background: rgb(143, 145, 142);
+   color:white;
+}
+.btntwo{
+   background: rgb(143, 145, 142);
+   color:white;
+   font-size: medium;
+}
+.btntwo:hover{
+   background:rgb(51, 48, 48);
+   color:white;
+}
+.change_content:after{
+   content: '';
+   animation:changetext 10s infinite linear;
+   color:rgb(117, 92, 205);
+   text-transform: uppercase;
+}
+@keyframes changetext{
+    0%{content: "pokhara";}
+    20%{content: "kathmandu";}
+    35%{content: "Bhaktpur";}
+    60%{content: "Chitwan";}
+    80%{content: "Lumbini";}
+    100%{content: "Dharan";}
+
+
+
+}
